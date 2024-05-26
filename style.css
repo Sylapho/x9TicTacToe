@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border: 5px solid #333;
+}
+
+.main-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.33%;
+    height: 33.33%;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    padding: 4px;
+}
+
+.cell {
+    width: 33.33%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #eee; /* Hover background color */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Subtle drop shadow */
+  }
+
+.cell.disabled {
+    pointer-events: none;
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+#game-status {
+    margin-top: 20px;
+    text-align: center;
+}
+
+  
+#status-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Darker color */
+}
+ 
+#restart {
+    padding: 10px 20px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    background-color: #e0e0e0; /* Light background color */
+    transition: all 0.3s ease; /* Animate all properties */
+    font-size: medium;
+}
+  
+#restart:hover {
+    background-color: #ccc; /* Darker background on hover */
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+.sub-grid.active {
+    border-color: #00f; /* Green border for active grid */
+}
+
+.winner {
+    background-color: lightgreen; /* Or any color to highlight the win */
+  }
+
+  .active {
+    /* Styles for the active cell and grid */
+    border: 2px solid blue; /* Example style */
+  }
