@@ -53,9 +53,9 @@ body {
 }
 
 .cell:hover {
-    background-color: #eee; /* Hover background color */
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Subtle drop shadow */
-  }
+    background-color: #eee;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
 
 .cell.disabled {
     pointer-events: none;
@@ -68,37 +68,35 @@ body {
     text-align: center;
 }
 
-  
 #status-text {
     font-size: 20px;
     font-weight: bold;
-    color: #333; /* Darker color */
+    color: #333;
 }
- 
+
 #restart {
     padding: 10px 20px;
-    border: 2px solid #007bff; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #007bff;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: #e0e0e0; /* Light background color */
-    transition: all 0.3s ease; /* Animate all properties */
+    background-color: #e0e0e0;
+    transition: all 0.3s ease;
     font-size: medium;
 }
-  
+
 #restart:hover {
-    background-color: #ccc; /* Darker background on hover */
-    transform: scale(1.05); /* Slight scale up on hover */
+    background-color: #ccc;
+    transform: scale(1.05);
 }
 
 .sub-grid.active {
-    border-color: #00f; /* Green border for active grid */
+    border-color: #00f;
 }
 
 .winner {
-    background-color: lightgreen; /* Or any color to highlight the win */
-  }
+    background-color: lightgreen;
+}
 
-  .active {
-    /* Styles for the active cell and grid */
-    border: 2px solid blue; /* Example style */
-  }
+.active {
+    border: 2px solid blue;
+}
